@@ -3,7 +3,7 @@ import pandas as pd
 import streamlit as st
 st.spinner(text="In progress...")
 model = Modelchest()
-df = pd.read_csv('train-small.csv')
+df = pd.read_csv('csv/train-small.csv')
 IMAGE_DIR = os.getcwd()
 labels = ['Cardiomegaly', 
           'Emphysema', 
@@ -28,6 +28,7 @@ tab1 , tab2 = st.tabs(["Home" , "Detection"])
 with tab1 : 
     st.header('About the Project and the Dataset : ')
     st.image("ezgif-3-7977ed06aa.gif")
+    st.header("Overview")
     st.write("""Chest X-rays are currently the best available method for diagnosing pneumonia, playing a crucial role in clinical care and epidemiological studies.
               Pneumonia is responsible for more than 1 million hospitalizations and 50,000 deaths per year in the US alone.""")
     st.write(""" 
@@ -70,4 +71,3 @@ with st.spinner('This will take some time...'):
                     for img in imglist[slice : ] : 
                         impath = f"{folder_path}/{img}"
                         st.image(impath)
-        st.success('Done!')

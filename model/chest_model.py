@@ -53,7 +53,7 @@ def compute_gradcam(model, img, image_dir, df, labels, selected_labels, layer_na
     ##############################
     print("Loading original image")
     plt.figure(figsize=(50, 50))
-    plt.subplot(1,1,1)
+    plt.subplot(1,1,1 , label="original")
     #plt.title("Original")
     #plt.axis('off')
     #plt.imshow(load_image(img, image_dir, df, preprocess=False), cmap='gray')
@@ -89,7 +89,7 @@ def compute_gradcam(model, img, image_dir, df, labels, selected_labels, layer_na
             gradcam = cam / cam.max()
             
             ###############################
-            plt.subplot(1,1,1)
+            plt.subplot(1,1,1 , label="class")
             plt.title(f"{labels[i]}: p={predictions[0][i]:.3f}" , fontsize=180)
             plt.axis('off')
             plt.imshow(load_image(img, image_dir, df, preprocess=False),cmap='gray')
@@ -102,6 +102,7 @@ def compute_gradcam(model, img, image_dir, df, labels, selected_labels, layer_na
             
             j += 1
             #################################
+
 
 def predection(img_name , IMAGE_DIR , model , df):
     x = load_image(img=img_name, image_dir=IMAGE_DIR , df=df)
