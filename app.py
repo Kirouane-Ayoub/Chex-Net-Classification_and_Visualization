@@ -1,4 +1,4 @@
-from chest_model import *
+from model.chest_model import *
 import pandas as pd
 import streamlit as st
 st.spinner(text="In progress...")
