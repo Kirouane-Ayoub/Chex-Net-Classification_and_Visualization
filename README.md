@@ -8,6 +8,13 @@ The **CheXNet** model architecture is based on a deep residual network (ResNet) 
 
 CheXNet achieved state-of-the-art performance on the NIH dataset, outperforming radiologists in identifying certain pathologies. The model's ability to automate the interpretation of chest X-rays has the potential to improve healthcare outcomes by reducing the time and cost of manual radiological interpretation and increasing diagnostic accuracy.
 **https://stanfordmlgroup.github.io/projects/chexnet**
+## Frameworks
+* **Pandas** is a library for data manipulation and analysis. It provides a number of functions for working with data **frames**, which are two-dimensional data structures that can be used to store and manipulate data.
+* **Streamlit** is a library for building web apps. It can be used to create data visualization apps that allow users to interact with data in real-time.
+* **TensorFlow** is a library for machine learning. It provides a number of functions for building and training machine learning models.
+* **NumPy** is a library for scientific computing. It provides a high-performance array data type and a number of functions for mathematical operations.
+* **OpenCV-Python** is a library for computer vision. It provides a wide range of functions for image processing, object detection, and machine learning.
+* **Matplotlib** is a library for plotting data. It provides a number of functions for creating graphs and charts.
 ## How To Run This APP
 
 ```
